@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema votazioni</title>
+    <style>
+        li {
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body onload="inizio()">
+    <div style="padding-left: 30px;">
+        <h1>Sistema votazioni in tempo reale</h1>
+        <ol>
+            <li id="primoPosto"></li>
+            <li id="secondoPosto"></li>
+            <li id="terzoPosto"></li>
+        </ol>
+        <button onclick="aggiungiVoto('partito1')">Vota Partito 1</button>
+        <button onclick="aggiungiVoto('partito2')">Vota Partito 2</button>
+        <button onclick="aggiungiVoto('partito3')">Vota Partito 3</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
